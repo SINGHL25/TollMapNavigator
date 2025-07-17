@@ -1,5 +1,11 @@
-
+import os
+import sys
 import streamlit as st
+
+# Ensure the current file's directory is in sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "app")))
+
+
 from app.file_loader import load_site_data
 from app.map_utils import create_map
 from streamlit_folium import folium_static
