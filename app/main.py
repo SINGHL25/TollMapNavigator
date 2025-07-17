@@ -6,6 +6,14 @@ import streamlit as st
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "app")))
 
 
+
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from app.file_loader import load_site_data
+
+
+
 from app.file_loader import load_site_data
 from app.map_utils import create_map
 from streamlit_folium import folium_static
